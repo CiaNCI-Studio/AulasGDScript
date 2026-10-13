@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmu82ntl2tv6l"]
+
+[ext_resource type="Script" uid="uid://bk5ahnrikj0yg" path="res://Components/Projectiles/rock.gd" id="1_wlahw"]
+[ext_resource type="Texture2D" uid="uid://k4p3e0d3fadw" path="res://Assets/2D/Particles/Pedrinha.svg" id="2_wlahw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lydtd"]
+radius = 14.0357
+
+[node name="Rock" type="RigidBody2D" groups=["atack"]]
+collision_layer = 4
+collision_mask = 4
+mass = 0.2
+gravity_scale = 0.0
+script = ExtResource("1_wlahw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_lydtd")
+
+[node name="Bala" type="Sprite2D" parent="."]
+position = Vector2(-1, 0)
+scale = Vector2(0.441294, -0.529333)
+texture = ExtResource("2_wlahw")

@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://c37pypxhbni5l"]
+
+[ext_resource type="Script" uid="uid://rh3cm7ja4soc" path="res://Components/Enemies/ave_pequena.gd" id="1_ujq3o"]
+[ext_resource type="BehaviorTree" uid="uid://mgttn0pl52n8" path="res://AI/AvePequena.tres" id="3_2a4od"]
+[ext_resource type="PackedScene" uid="uid://cwpxrfibi16i0" path="res://Components/Enemies/AvePequenaAnim.tscn" id="3_jqyrl"]
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_2a4od"]
+resource_local_to_scene = true
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ngx20"]
+radius = 45.0
+height = 162.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2a4od"]
+radius = 57.0
+height = 174.0
+
+[node name="AvePequena" type="CharacterBody2D" unique_id=470607507]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_ujq3o")
+
+[node name="BTPlayer" type="BTPlayer" parent="." unique_id=2007179397]
+behavior_tree = ExtResource("3_2a4od")
+blackboard_plan = SubResource("BlackboardPlan_2a4od")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1555667313]
+visible = false
+position = Vector2(-1, -80)
+shape = SubResource("CapsuleShape2D_ngx20")
+
+[node name="ImpactArea" type="Area2D" parent="." unique_id=501704728]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ImpactArea" unique_id=1640754162]
+visible = false
+position = Vector2(0, -65)
+shape = SubResource("CapsuleShape2D_2a4od")
+
+[node name="AvePequenaAnim" parent="." unique_id=1011963720 instance=ExtResource("3_jqyrl")]
+position = Vector2(1, -85)
+scale = Vector2(0.6, 0.6)
+
+[connection signal="body_entered" from="ImpactArea" to="." method="_on_impact_area_body_entered"]

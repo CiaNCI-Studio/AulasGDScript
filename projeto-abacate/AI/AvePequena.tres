@@ -1,0 +1,72 @@
+[gd_resource type="BehaviorTree" format=3 uid="uid://mgttn0pl52n8"]
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_sxxv0"]
+var/PlayeInRange/name = &"PlayeInRange"
+var/PlayeInRange/type = 1
+var/PlayeInRange/value = false
+var/PlayeInRange/hint = 0
+var/PlayeInRange/hint_string = ""
+
+[sub_resource type="BBNode" id="BBNode_sxxv0"]
+saved_value = NodePath(".")
+resource_name = "."
+
+[sub_resource type="BTCallMethod" id="BTCallMethod_20plw"]
+node = SubResource("BBNode_sxxv0")
+method = &"CheckPlayer"
+result_var = &"PlayeInRange"
+resource_local_to_scene = true
+
+[sub_resource type="BBVariant" id="BBVariant_sxxv0"]
+type = 1
+saved_value = true
+resource_name = "true"
+
+[sub_resource type="BTCheckVar" id="BTCheckVar_20plw"]
+variable = &"PlayeInRange"
+value = SubResource("BBVariant_sxxv0")
+resource_local_to_scene = true
+
+[sub_resource type="BBNode" id="BBNode_20plw"]
+saved_value = NodePath(".")
+resource_name = "."
+
+[sub_resource type="BTCallMethod" id="BTCallMethod_lovky"]
+node = SubResource("BBNode_20plw")
+method = &"Atack"
+resource_local_to_scene = true
+
+[sub_resource type="BTCooldown" id="BTCooldown_sxxv0"]
+duration = 3.0
+children = [SubResource("BTCallMethod_lovky")]
+resource_local_to_scene = true
+
+[sub_resource type="BTSequence" id="BTSequence_20plw"]
+children = [SubResource("BTCheckVar_20plw"), SubResource("BTCooldown_sxxv0")]
+resource_local_to_scene = true
+
+[sub_resource type="BTInvert" id="BTInvert_sxxv0"]
+children = [SubResource("BTSequence_20plw")]
+resource_local_to_scene = true
+
+[sub_resource type="BBNode" id="BBNode_lovky"]
+saved_value = NodePath(".")
+resource_name = "."
+
+[sub_resource type="BTCallMethod" id="BTCallMethod_r7ima"]
+node = SubResource("BBNode_lovky")
+method = &"Move"
+resource_local_to_scene = true
+
+[sub_resource type="BTCooldown" id="BTCooldown_20plw"]
+duration = 5.0
+children = [SubResource("BTCallMethod_r7ima")]
+resource_local_to_scene = true
+
+[sub_resource type="BTSequence" id="BTSequence_sxxv0"]
+children = [SubResource("BTCallMethod_20plw"), SubResource("BTInvert_sxxv0"), SubResource("BTCooldown_20plw")]
+resource_local_to_scene = true
+
+[resource]
+blackboard_plan = SubResource("BlackboardPlan_sxxv0")
+root_task = SubResource("BTSequence_sxxv0")

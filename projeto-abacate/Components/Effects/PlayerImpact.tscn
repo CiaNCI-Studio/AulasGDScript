@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ebu28i2p4h5i"]
+
+[ext_resource type="Material" uid="uid://4l6uheb8q6dl" path="res://Components/ParticlesBase/PlayerImpact.tres" id="1_p3q55"]
+[ext_resource type="Texture2D" uid="uid://bmqiqgf872wuw" path="res://Assets/2D/Particles/pipoca.svg" id="1_wc6yx"]
+[ext_resource type="Script" uid="uid://ds2tjb6jlbxmu" path="res://Components/Effects/player_impact.gd" id="1_xgsuu"]
+
+[node name="PlayerImpact" type="Node2D" unique_id=1923925317]
+script = ExtResource("1_xgsuu")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1968635086]
+emitting = false
+amount = 12
+texture = ExtResource("1_wc6yx")
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+process_material = ExtResource("1_p3q55")

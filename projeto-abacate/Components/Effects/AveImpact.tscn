@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bunsya767qunk"]
+
+[ext_resource type="Material" uid="uid://bu4x1qklgyci3" path="res://Components/ParticlesBase/AveImpact.tres" id="1_12i48"]
+[ext_resource type="Texture2D" uid="uid://b3ncy4l5ffvhx" path="res://Assets/2D/Particles/Pena.svg" id="1_b2c81"]
+[ext_resource type="Script" uid="uid://bg3o7b1pmke6q" path="res://Components/Effects/ave_impact.gd" id="1_cx1dh"]
+
+[node name="AveImpact" type="Node2D" unique_id=1569687191]
+script = ExtResource("1_cx1dh")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1214294732]
+emitting = false
+amount = 12
+texture = ExtResource("1_b2c81")
+one_shot = true
+explosiveness = 1.0
+process_material = ExtResource("1_12i48")

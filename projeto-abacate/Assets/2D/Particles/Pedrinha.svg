@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 16.933333 16.933333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="Pedrinha.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="4.0000002"
+     inkscape:cx="-35.374998"
+     inkscape:cy="41.999998"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g53" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g53"
+       transform="matrix(1.5318766,0.84402345,-0.75563141,1.711072,246.2671,-1.325792)">
+      <path
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.667455;stroke-linecap:square;stroke-dasharray:none;paint-order:stroke markers fill;fill-opacity:1.0;stroke-opacity:1.0"
+         d="m -126.40735,68.312348 -0.23528,-3.764416 3.9997,-2.588035 3.99969,2.352758 -2.11748,1.88221 2.58803,2.117483 -4.70552,1.176381 z"
+         id="path52" />
+      <path
+         style="fill:#ffffff;stroke-width:4;stroke-linecap:square;paint-order:stroke markers fill;fill-opacity:1.0"
+         d="m -125.32921,66.949449 0.41098,-2.009225 0.95895,-0.958947 1.50692,-0.6393 -1.1416,0.958948 -0.95895,0.958948 z"
+         id="path53" />
+    </g>
+  </g>
+</svg>

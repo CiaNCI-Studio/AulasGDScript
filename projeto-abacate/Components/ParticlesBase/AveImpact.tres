@@ -1,0 +1,20 @@
+[gd_resource type="ParticleProcessMaterial" format=3 uid="uid://bu4x1qklgyci3"]
+
+[sub_resource type="Curve" id="Curve_twutv"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -2.06547, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_wmsfn"]
+curve = SubResource("Curve_twutv")
+
+[resource]
+particle_flag_disable_z = true
+direction = Vector3(1, 1, 1)
+spread = 180.0
+initial_velocity_min = 329.93
+initial_velocity_max = 1000.0
+angular_velocity_min = -352.65
+angular_velocity_max = 401.64
+gravity = Vector3(0, 50, 0)
+alpha_curve = SubResource("CurveTexture_wmsfn")
+turbulence_enabled = true

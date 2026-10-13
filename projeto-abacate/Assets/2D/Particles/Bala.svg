@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.4666672mm"
+   height="6.3860016mm"
+   viewBox="0 0 8.4666671 6.3860015"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="Bala.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="15.341692"
+     inkscape:cy="6.0609153"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-57.038985,-59.683425)">
+    <g
+       id="g3"
+       transform="matrix(0.60437185,0,0,0.60437185,22.566228,23.612443)">
+      <path
+         style="fill:#000000;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-dasharray:none;paint-order:stroke markers fill;fill-opacity:1.0;stroke-opacity:1.0"
+         d="m 57.604416,60.187572 7.749474,0.06458 2.712315,0.904105 1.80821,1.80821 0.64579,2.453999 -0.904105,2.066526 -1.80821,1.549895 -3.09979,0.645789 -7.168261,0.06458 c -0.0075,-3.186009 0.03613,-6.371851 0.06458,-9.557684 z"
+         id="path1"
+         sodipodi:nodetypes="cccccccccc" />
+      <path
+         style="fill:#ffffff;stroke:none;stroke-width:1.39394;stroke-linecap:square;stroke-dasharray:none;paint-order:stroke markers fill;fill-opacity:1.0"
+         d="m 65.559961,60.937497 1.591329,0.509229 1.209408,0.859316 0.922973,1.082104 0.445572,1.113931 -0.986624,-0.541052 -0.891144,-1.241238 -0.954798,-0.668359 -1.368541,-0.44557 z"
+         id="path2" />
+      <path
+         style="fill:#ffffff;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none;paint-order:stroke markers fill;fill-opacity:1.0"
+         d="m 60.788795,60.756225 0.251153,1.255768 0.02283,1.324261 -0.06849,2.123384 -0.11416,2.808351 -0.182657,0.89045 0.913283,-1.004612 0.0685,-2.876844 0.04566,-2.237547 -0.182655,-1.369925 z"
+         id="path3" />
+    </g>
+  </g>
+</svg>
