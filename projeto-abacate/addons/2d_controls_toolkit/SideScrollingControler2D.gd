@@ -147,7 +147,7 @@ func handle_gravity(delta : float):
 	if dashing:
 		velocity.y = 0
 	elif Handle_Gravity and not OnFloorOrHang():
-		velocity += (get_gravity() * delta) * -1
+		velocity += (get_gravity() * delta)
 	else:
 		velocity.y = 0
 

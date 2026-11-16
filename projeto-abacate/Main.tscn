@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://cgccbfe33x14b" path="res://main.gd" id="1_glv2v"]
 [ext_resource type="TileSet" uid="uid://breu7knke1q4h" path="res://Components/TileSet/Chao.tres" id="2_lgr22"]
 [ext_resource type="PackedScene" uid="uid://c37pypxhbni5l" path="res://Components/Enemies/AvePequena.tscn" id="3_trn2v"]
-[ext_resource type="PackedScene" uid="uid://7n1tpyi6p5kr" path="res://Components/Player/Player.tscn" id="4_03owx"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_wkp8b"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="6_20pc6"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_5vvyt"]
+[ext_resource type="PackedScene" uid="uid://bpy7iefnrrynu" path="res://Components/Player/Player2.tscn" id="8_03owx"]
 [ext_resource type="PackedScene" uid="uid://jrvwrknfoage" path="res://HUD.tscn" id="8_trn2v"]
 
 [sub_resource type="Resource" id="Resource_c6i3y"]
@@ -25,12 +25,9 @@ tile_set = ExtResource("2_lgr22")
 [node name="AvePequena" parent="." unique_id=191120414 instance=ExtResource("3_trn2v")]
 position = Vector2(1404, 400)
 
-[node name="Player" parent="." unique_id=1996311776 instance=ExtResource("4_03owx")]
-position = Vector2(-1099, 322)
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=543497036]
 physics_interpolation_mode = 1
-position = Vector2(-1099, 322)
+position = Vector2(-1152, 356)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=866535487]
 process_priority = 300
@@ -40,7 +37,7 @@ metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
 [node name="PlayerCamera" type="Node2D" parent="." unique_id=680582684 node_paths=PackedStringArray("follow_target")]
 top_level = true
-position = Vector2(-1099, 322)
+position = Vector2(-1152, 356)
 script = ExtResource("6_20pc6")
 follow_mode = 2
 follow_target = NodePath("../Player")
@@ -50,3 +47,6 @@ metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=150588495]
 
 [node name="Hud" parent="CanvasLayer" unique_id=1042284641 instance=ExtResource("8_trn2v")]
+
+[node name="Player" parent="." unique_id=1996311776 instance=ExtResource("8_03owx")]
+position = Vector2(-1152, 356)
